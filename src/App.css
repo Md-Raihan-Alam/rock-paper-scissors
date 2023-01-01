@@ -67,6 +67,39 @@ body {
   color: hsl(229deg, 25%, 31%);
 }
 
+.gameOption {
+  width: 100%;
+  padding: 80px 0px;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.gameOption .pentagon {
+  width: 280px;
+  height: 250px;
+}
+.gameOption .lizard, .gameOption .paper, .gameOption .rock, .gameOption .scissorBox, .gameOption .spock {
+  position: absolute;
+}
+.gameOption .scissorBox {
+  top: 60px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid hsl(39deg, 89%, 49%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */

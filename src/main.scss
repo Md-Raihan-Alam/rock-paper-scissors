@@ -59,6 +59,33 @@ body{
         }
     }
 }
+.gameOption{
+    width:100%;
+    padding:80px 0px;
+    height:fit-content;
+    position:relative;
+    @include flexBox(row,center ,center );
+    .pentagon{
+        width:280px;
+        height:250px;
+    }
+    .lizard,.paper,.rock,.scissorBox,.spock{
+        position:absolute;
+    }
+    .scissorBox{
+        top:60px;
+        width:100px;
+        height:100px;
+        @include flexBox(row,center ,center );
+        border:10px solid $scissorsGradientFrom;
+        border-radius:10000px;
+        border:double 10px transparent;
+        background-image: linear-gradient(white,white),
+        linear-gradient(90deg,$scissorsGradientFrom,$scissorsGradientTo);
+        background-origin:border-box;
+        background-clip:content-box,border-box;        
+    }
+}
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
