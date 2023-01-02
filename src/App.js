@@ -11,14 +11,24 @@ function App() {
     <div className="App">
       <Header></Header>
       <div className="gameOption">
-          <img src={pentagon} className="pentagon" alt="pentagon"/>
-          <img src={lizard} className="lizard" alt="lizard"/>
-          <img src={paper} className="paper" alt="paper"/>
-          <img src={rock} className="rock" alt="rock"/>
-          <div className="scissorBox">
-          <img src={scissor} className="scissor" alt="scissor"/>  
+        <div className="gameBox">
+        <img src={pentagon} className="pentagon" alt="pentagon"/>
+          <div className="lizardBox">
+            <img src={lizard} className="lizard" alt="lizard"/>
           </div>
-          <img src={spock} className="spock" alt="spock"/>
+          <div className="paperBox">
+            <img src={paper} className="paper" alt="paper"/>
+          </div>
+          <div className="rockBox">
+            <img src={rock} className="rock" alt="rock"/>
+          </div>
+          <div className="scissorBox">
+            <img src={scissor} className="scissor" alt="scissor"/>  
+         </div>
+          <div className="spockBox">
+            <img src={spock} className="spock" alt="spock"/>
+          </div>
+        </div>
       </div>
     </div>
   );

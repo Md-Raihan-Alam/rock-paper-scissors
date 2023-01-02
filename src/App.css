@@ -33,7 +33,7 @@ body {
 @media screen and (min-width: 401px) {
   .header .header_box {
     width: 60%;
-    max-width: 60%;
+    max-width: 500px;
   }
 }
 .header .header_box .logo {
@@ -71,23 +71,53 @@ body {
   width: 100%;
   padding: 80px 0px;
   height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.gameOption .gameBox {
+  width: 350px;
+  height: fit-content;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.gameOption .pentagon {
+.gameOption .gameBox .pentagon {
   width: 280px;
   height: 250px;
 }
-.gameOption .lizard, .gameOption .paper, .gameOption .rock, .gameOption .scissorBox, .gameOption .spock {
-  position: absolute;
+@media screen and (min-width: 401px) {
+  .gameOption .gameBox .pentagon {
+    width: 329px;
+    height: 313px;
+  }
 }
-.gameOption .scissorBox {
-  top: 60px;
-  width: 100px;
-  height: 100px;
+.gameOption .gameBox .lizardBox, .gameOption .gameBox .paperBox, .gameOption .gameBox .rockBox, .gameOption .gameBox .scissorBox, .gameOption .gameBox .spockBox {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+@media screen and (min-width: 401px) {
+  .gameOption .gameBox .lizardBox, .gameOption .gameBox .paperBox, .gameOption .gameBox .rockBox, .gameOption .gameBox .scissorBox, .gameOption .gameBox .spockBox {
+    width: 100px;
+    height: 100px;
+  }
+}
+.gameOption .gameBox .lizard, .gameOption .gameBox .paper, .gameOption .gameBox .rock, .gameOption .gameBox .scissor, .gameOption .gameBox .spock {
+  width: 31px;
+  height: 38px;
+}
+@media screen and (min-width: 401px) {
+  .gameOption .gameBox .lizard, .gameOption .gameBox .paper, .gameOption .gameBox .rock, .gameOption .gameBox .scissor, .gameOption .gameBox .spock {
+    width: 49px;
+    height: 59px;
+  }
+}
+.gameOption .gameBox .scissorBox {
+  top: -15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -98,6 +128,106 @@ body {
   background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
   background-origin: border-box;
   background-clip: content-box, border-box;
+}
+.gameOption .gameBox .scissorBox:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 401px) {
+  .gameOption .gameBox .scissorBox {
+    top: -20px;
+  }
+}
+.gameOption .gameBox .lizardBox {
+  bottom: -10px;
+  left: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid hsl(261deg, 73%, 60%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(261deg, 73%, 60%), hsl(261deg, 72%, 63%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.gameOption .gameBox .lizardBox:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 401px) {
+  .gameOption .gameBox .lizardBox {
+    bottom: -15px;
+    left: 5%;
+  }
+}
+.gameOption .gameBox .paperBox {
+  top: 40px;
+  right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid hsl(230deg, 89%, 62%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.gameOption .gameBox .paperBox:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 401px) {
+  .gameOption .gameBox .paperBox {
+    top: 50px;
+    right: 0;
+  }
+}
+.gameOption .gameBox .rockBox {
+  bottom: -10px;
+  right: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid hsl(349deg, 71%, 52%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(349deg, 71%, 52%), hsl(349deg, 70%, 56%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.gameOption .gameBox .rockBox:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 401px) {
+  .gameOption .gameBox .rockBox {
+    bottom: -20px;
+    right: 5%;
+  }
+}
+.gameOption .gameBox .spockBox {
+  top: 40px;
+  left: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid hsl(189deg, 59%, 53%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(189deg, 59%, 53%), hsl(189deg, 58%, 57%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.gameOption .gameBox .spockBox:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 401px) {
+  .gameOption .gameBox .spockBox {
+    top: 50px;
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=bg-design.scss.map */
