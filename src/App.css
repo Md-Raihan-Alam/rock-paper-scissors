@@ -230,6 +230,115 @@ body {
   }
 }
 
+.btnDiv {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btnDiv .btnContainer {
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 401px) {
+  .btnDiv .btnContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.btnDiv .btnContainer .btn {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (min-width: 401px) {
+  .btnDiv .btnContainer {
+    margin-right: 20px;
+  }
+}
+
+.ruleDiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: none;
+  top: 0;
+}
+.ruleDiv .imgRule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  border-radius: 0px;
+}
+.ruleDiv .imgRule .otherClose {
+  display: none;
+}
+.ruleDiv .imgRule .mobileClose {
+  display: block;
+}
+.ruleDiv .imgRule .gameRules {
+  width: 80%;
+}
+@media screen and (min-width: 401px) {
+  .ruleDiv .imgRule {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+  }
+  .ruleDiv .imgRule .otherClose {
+    display: block;
+  }
+  .ruleDiv .imgRule .mobileClose {
+    display: none;
+  }
+}
+.ruleDiv .imgRule .ruleHeader {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: hsl(214deg, 47%, 23%);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media screen and (min-width: 401px) {
+  .ruleDiv .imgRule .ruleHeader {
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 50px;
+  }
+}
+.ruleDiv .imgRule .closeSign {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
