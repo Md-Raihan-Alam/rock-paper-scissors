@@ -216,6 +216,7 @@ body{
     position:absolute;
     display:none;
     top:0;
+    background-color:$backgroundBlackHover;
     .imgRule
     {
         @include flexBox(column,space-around ,center );

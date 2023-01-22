@@ -13,7 +13,7 @@ const closeRules=()=>{
   return (
     <div className="App">
       <Header></Header>
-      <Game></Game>
+      <Game className="vis"></Game>
       <div className="ruleDiv">
         <div className="imgRule">
           <div className="ruleHeader">
