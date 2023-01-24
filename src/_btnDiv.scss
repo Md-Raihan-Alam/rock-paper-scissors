@@ -1,0 +1,30 @@
+.btnDiv{
+    width:100%;
+    height:fit-content;
+    @include flexBox(row,center ,center );
+    .btnContainer{
+        width:400px;
+        height:fit-content;
+        @include flexBox(row,center ,center );
+        @media screen and (min-width:$mobileWidth)
+        {
+            width:100%;
+            @include flexBox(row,flex-end ,center );
+        }
+        .btn{
+            width:150px;
+            height:50px;
+            text-transform: uppercase;
+            background-color: transparent;
+            border-radius: 10px;
+            font-size:20px;
+            letter-spacing: 3px;
+            color:white;
+            cursor: pointer;
+        }
+        @media screen and (min-width:$mobileWidth)
+        {
+            margin-right:20px;
+        }
+    }
+}

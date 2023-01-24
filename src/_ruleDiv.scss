@@ -1,0 +1,57 @@
+.ruleDiv{
+    width:100%;
+    height:100vh;
+    @include flexBox(row,center ,center );
+    position:absolute;
+    display:none;
+    top:0;
+    background-color:$backgroundBlackHover;
+    .imgRule
+    {
+        @include flexBox(column,space-around ,center );
+        background-color:white;
+        width:100%;
+        height:100vh;
+        z-index:100;
+        border-radius: 0px;
+        .otherClose{
+            display:none;
+        }
+        .mobileClose{
+            display: block;
+        }
+        .gameRules{
+            width: 80%;
+        }
+        @media screen and (min-width:$mobileWidth)
+        {
+            .otherClose{
+                display:block;
+            }
+            .mobileClose{
+                display: none;
+            }
+            width:400px;
+            height:600px;
+            border-radius: 10px;
+        }
+        .ruleHeader{
+            width:100%;
+            height:100px;
+            @include flexBox(row,center ,center );
+            font-size:30px;
+            color:$backgroundRadialFrom;
+            text-transform: uppercase;
+            font-weight:700;
+            @media screen and (min-width:$mobileWidth)
+            {
+                justify-content: space-between;
+                padding:0px 20px;
+                height:50px;
+            }
+        }
+        .closeSign{
+            cursor: pointer;
+        }
+    }
+}

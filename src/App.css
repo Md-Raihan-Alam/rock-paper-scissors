@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background-image: radial-gradient(circle, hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
-}
-
 .header {
   width: 100%;
   height: 150px;
@@ -340,7 +329,16 @@ body {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=bg-design.scss.map */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(circle, hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
+} /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */

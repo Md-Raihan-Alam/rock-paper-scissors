@@ -1,0 +1,110 @@
+.gameOption{
+    width:100%;
+    padding:80px 0px;
+    height:fit-content;
+    @include flexBox(row,center ,center );
+    .gameBox{
+        width:350px;
+        height:fit-content;
+        position:relative;
+        @include flexBox(row,center ,center );
+        .pentagon{
+            width:280px;
+            height:250px;
+            @media screen and (min-width:$mobileWidth)
+            {
+                width:329px;
+                height:313px;   
+            }
+        }
+        .lizardBox,.paperBox,.rockBox,.scissorBox,.spockBox{
+            position:absolute;
+            width:80px;
+            height:80px;
+            @media screen and (min-width:$mobileWidth)
+            {
+                width:100px;
+                height:100px;
+            }
+        }
+        .lizard,.paper,.rock,.scissor,.spock
+        {
+            width:31px;
+            height:38px;
+            @media screen and (min-width:$mobileWidth)
+            {
+                width:49px;
+                height:59px;
+            }
+        }
+        .scissorBox{
+            top:-15px;
+            @include flexBox(row,center ,center );
+            @include gradientBorder($scissorsGradientFrom,$scissorsGradientTo );        
+            &:hover{
+                cursor: pointer;
+            }
+            @media screen and (min-width:$mobileWidth)
+            {
+               top:-20px;
+            }
+        }
+        .lizardBox{
+            bottom:-10px;
+            left:7%;
+            @include flexBox(row,center ,center );
+            @include gradientBorder($lizardGradientFrom,$lizardGradientTo );
+            &:hover{
+                cursor: pointer;
+            }
+            @media screen and (min-width:$mobileWidth)
+            {
+                bottom:-15px;
+                left:5%;
+            }
+        }
+        .paperBox{
+            top:40px;
+            right:5%;
+            @include flexBox(row,center ,center );
+            @include gradientBorder($paperGradientFrom,$paperGradientTo );
+            &:hover{
+                cursor: pointer;
+            }
+            @media screen and (min-width:$mobileWidth)
+            {
+                top:50px;
+                right:0;                
+            }
+        }
+        .rockBox
+        {
+            bottom:-10px;
+            right:15%;
+            @include flexBox(row,center ,center );
+            @include gradientBorder($rockGradientFrom,$rockGradientTo );
+            &:hover{
+                cursor: pointer;
+            }
+            @media screen and (min-width:$mobileWidth)
+            {
+                bottom:-20px;
+                right:5%;
+            }
+        }
+        .spockBox{
+            top:40px;
+            left:7%;
+            @include flexBox(row,center ,center );
+            @include gradientBorder($cyanFrom,$cyanTo );
+            &:hover{
+                cursor: pointer;
+            }
+            @media screen and (min-width:$mobileWidth)
+            {
+                top:50px;
+                left:0;                
+            }    
+        }
+    }
+}
