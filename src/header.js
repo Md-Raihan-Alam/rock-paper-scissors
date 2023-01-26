@@ -1,5 +1,7 @@
 import logoText from './img/logo-bonus.svg';
+import { useSelector } from 'react-redux';
 function Header(){
+  const score=useSelector(state=>state)
     return (
         <div className="header">
         <div className="header_box">
@@ -9,7 +11,7 @@ function Header(){
               score
             </div>
             <div className="totalScore">
-              12
+              {score}
             </div>
           </div>
         </div>

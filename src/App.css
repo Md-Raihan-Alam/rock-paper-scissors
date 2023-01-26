@@ -338,7 +338,151 @@ body {
   width: 100%;
   height: 100vh;
   background-image: radial-gradient(circle, hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
-} /*# sourceMappingURL=bg-design.scss.map */
+}
+
+.resultMode {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resultMode .showResult {
+  max-width: 400px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.resultMode .showResult .ChoiceDiv {
+  margin-top: 30px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.resultMode .showResult .ChoiceDiv .computerChoiceHolder {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resultMode .showResult .ChoiceDiv .playerChoiceHolder {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resultMode .showResult .ChoiceDiv .choiceLetter {
+  width: 150px;
+  font-size: 14px;
+  height: fit-content;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  color: whitesmoke;
+}
+.resultMode .showResult .ChoiceDiv .winner {
+  box-shadow: rgba(255, 255, 255, 0.15) 6px 6px 50px 11px, rgba(207, 205, 205, 0.2) 0px 0px 50px 20px, rgba(255, 255, 255, 0.3) 1px 1px 150px 30px;
+}
+.resultMode .showResult .playerChoiceLizard {
+  border: 10px solid hsl(261deg, 73%, 60%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(261deg, 73%, 60%), hsl(261deg, 72%, 63%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.resultMode .showResult .playerChoicePaper {
+  border: 10px solid hsl(230deg, 89%, 62%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.resultMode .showResult .playerChoiceRock {
+  border: 10px solid hsl(349deg, 71%, 52%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(349deg, 71%, 52%), hsl(349deg, 70%, 56%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.resultMode .showResult .playerChoiceScissor {
+  border: 10px solid hsl(39deg, 89%, 49%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.resultMode .showResult .playerChoiceSpock {
+  border: 10px solid hsl(189deg, 59%, 53%);
+  border-radius: 10000px;
+  border: double 10px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, hsl(189deg, 59%, 53%), hsl(189deg, 58%, 57%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.resultMode .declareResult {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resultMode .declareResult .resultAnnounce {
+  font-size: 50px;
+  color: whitesmoke;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.resultMode .declareResult .btnReset {
+  width: 250px;
+  height: 50px;
+  background-color: whitesmoke;
+  color: hsl(229deg, 25%, 31%);
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.resultMode .mediaStatusTab {
+  display: none;
+}
+.resultMode .mediaStatusMob {
+  display: flex;
+}
+@media screen and (min-width: 600px) {
+  .resultMode .mediaStatusTab {
+    display: flex;
+  }
+  .resultMode .mediaStatusMob {
+    display: none;
+  }
+}
+
+.resultModeHide {
+  display: none;
+}
+
+/*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */
 /*# sourceMappingURL=bg-design.scss.map */

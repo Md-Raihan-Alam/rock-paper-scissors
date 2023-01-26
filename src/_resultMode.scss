@@ -1,0 +1,100 @@
+.resultMode{
+    width:100%;
+    height:500px;
+    @include flexBox(column,center,center);
+    .showResult{
+        max-width:400px;
+        width:300px;
+        height:300px;
+        @include flexBox(row,space-around,center);
+        .ChoiceDiv{
+            margin-top:30px;
+            width:400px;
+            height:200px;
+            @include flexBox(column,space-around,center);
+            .computerChoiceHolder{
+                width:100px;
+                height:100px;
+                @include flexBox(column,center,center);
+            }
+            .playerChoiceHolder{
+                width:100px;
+                height:100px;
+                @include flexBox(column,center,center);
+            }
+            .choiceLetter{
+                width:150px;
+                font-size:14px;
+                height:fit-content;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight:900;
+                color:whitesmoke;
+            }
+            .winner{
+                box-shadow: rgba(255, 255, 255, 0.15) 6px 6px 50px 11px,
+				rgba(207, 205, 205, 0.2) 0px 0px 50px 20px,
+				rgba(255, 255, 255, 0.3) 1px 1px 150px 30px;
+            }
+        }
+        .playerChoiceLizard
+        {
+            @include gradientBorder($lizardGradientFrom,$lizardGradientTo);
+        }
+        .playerChoicePaper{
+            @include gradientBorder($paperGradientFrom,$paperGradientTo);
+        }
+        .playerChoiceRock{
+            @include gradientBorder($rockGradientFrom,$rockGradientTo);
+        }
+        .playerChoiceScissor
+        {
+            @include gradientBorder($scissorsGradientFrom,$scissorsGradientTo);
+        }
+        .playerChoiceSpock
+        {
+            @include gradientBorder($cyanFrom,$cyanTo);
+        }
+    }
+    .declareResult{
+        width:400px;
+        height:200px;
+        @include flexBox(column,center,center);
+        .resultAnnounce{
+            font-size:50px;
+            color:whitesmoke;
+            font-weight:900;
+            text-transform: uppercase;
+            margin-bottom:20px;
+        }
+        .btnReset{
+            width:250px;
+            height:50px;
+            background-color:whitesmoke;
+            color:$darkText;
+            border-radius: 10px;
+            font-size:20px;
+            letter-spacing: 3px;
+            cursor:pointer;
+            @include flexBox(row,center,center);
+        }
+    }
+    .mediaStatusTab{
+        display:none;
+    }
+    .mediaStatusMob{
+        display:flex;
+    }
+    @media screen and (min-width:$tabWidth)
+    {
+        .mediaStatusTab{
+            display: flex;
+        }
+        .mediaStatusMob{
+            display:none;
+        }
+    }
+}
+.resultModeHide{
+    display:none;
+}
