@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/Md-Raihan-Alam/rock-paper-scissors)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/rockscissorpaperbonus-game-with-react-and-scss-and-redux-GnIlSjNebb)
 - Live Site URL: [Live](https://spectacular-marzipan-0e4a26.netlify.app/)
 
 ## My process
@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-A proper understaing how important it is to have context api (even if I did not use it), more deep knowledge about useState and useEffect. and experience working in Linux
+A proper understaing how important it is to have context api (even if I did not use it), more deep knowledge about useState and useEffect. and experience working in Linux and with redux
 
 ### Continued development
 
