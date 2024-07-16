@@ -59,4 +59,3 @@ complete a project using next
 ## Author
 
 - Frontend Mentor - [@Md-Raihan-Alam](https://www.frontendmentor.io/profile/Md-Raihan-Alam)
-- Twitter - [@MdRaiha48799193](https://twitter.com/MdRaiha48799193)
